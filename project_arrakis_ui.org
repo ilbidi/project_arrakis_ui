@@ -1,0 +1,10 @@
+NOTES ON PROJECT ARRAKIS UI
+* Tecnology
+1) Python
+2) Flask
+3) SQLAlchemy
+* Reference
+Begining with Flask Tutorial
+http://flask.pocoo.org/docs/0.12/tutorial/
+* Notes
+** Directory structure

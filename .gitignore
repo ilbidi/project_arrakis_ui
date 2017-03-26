@@ -39,7 +39,7 @@ Thumbs.db
 # Custom Files and directories #
 ################################
 *-workspace/
-venv/
+pa-venv/
 utils/
 *~
 *#

@@ -1,0 +1,2 @@
+graft project_arrakis_ui/templates
+graft project_arrakis_ui/static

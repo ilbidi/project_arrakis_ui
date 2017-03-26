@@ -1,0 +1,8 @@
+MANIFEST.in
+project_arrakis_ui/__init__.py
+project_arrakis_ui/project_arrakis_ui.py
+project_arrakis_ui.egg-info/PKG-INFO
+project_arrakis_ui.egg-info/SOURCES.txt
+project_arrakis_ui.egg-info/dependency_links.txt
+project_arrakis_ui.egg-info/requires.txt
+project_arrakis_ui.egg-info/top_level.txt
