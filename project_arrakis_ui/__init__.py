@@ -1,1 +1,1 @@
-from .project-arrakis-ui import app
+from .project_arrakis_ui import app

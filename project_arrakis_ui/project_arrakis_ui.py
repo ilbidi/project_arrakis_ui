@@ -9,3 +9,11 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.update(SECRET_KEY='PAUISK')
 app.config.from_envvar('PROJECT-ARRAKIS-UI-SETTIINGS', silent=True)
+
+@app.route('/')
+def index():
+    return 'Hello'
+
+@app.route('/credits')
+def credits():
+    return '<b>Credits</b>'

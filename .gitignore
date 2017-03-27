@@ -41,6 +41,7 @@ Thumbs.db
 *-workspace/
 pa-venv/
 utils/
+project_arrakis_ui.egg-info/
 *~
 *#
 *.db

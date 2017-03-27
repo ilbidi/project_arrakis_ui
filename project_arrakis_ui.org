@@ -6,5 +6,27 @@ NOTES ON PROJECT ARRAKIS UI
 * Reference
 Begining with Flask Tutorial
 http://flask.pocoo.org/docs/0.12/tutorial/
+Structure of a python package described in the tutorial and in
+https://packaging.python.org/
+to install the package in the virtual enviroment use:
+pip install --editable .
+
 * Notes
 ** Directory structure
+Si ottiene facilmente col comando 
+tree -I "*venv*" (esclude files e directory contenti venv)
+.
+├── MANIFEST.in
+├── README.md
+├── project_arrakis_ui
+│   ├── __init__.py
+│   ├── project_arrakis_ui.py
+│   ├── static
+│   └── templates
+├── project_arrakis_ui.org
+└── setup.py
+** How to run a flask app
+to run this app, afteexport FLASK_APP=project-arrakis-ui
+export FLASK_DEBUG=true
+flask run
+
