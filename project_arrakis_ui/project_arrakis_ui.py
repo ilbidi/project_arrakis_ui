@@ -16,4 +16,5 @@ def index():
 
 @app.route('/credits')
 def credits():
-    return '<b>Credits</b>'
+    flash('Credits flashed')
+    return render_template('credits.html')
