@@ -12,7 +12,7 @@ app.config.from_envvar('PROJECT-ARRAKIS-UI-SETTIINGS', silent=True)
 
 @app.route('/')
 def index():
-    return 'Hello'
+    return render_template('index.html')
 
 @app.route('/credits')
 def credits():

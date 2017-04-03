@@ -26,7 +26,34 @@ tree -I "*venv*" (esclude files e directory contenti venv)
 ├── project_arrakis_ui.org
 └── setup.py
 ** How to run a flask app
-to run this app, afteexport FLASK_APP=project-arrakis-ui
+to run this app
+export FLASK_APP=project-arrakis-ui
 export FLASK_DEBUG=true
 flask run
 
+* Tasks
+** Pagina web che mostra le utlime letture
+*** Main form
+creare una pagina web che mostra le ultime letture (da parametro)
+si tratta di mostrare un qualcosa del genere:
+| Date time     | Sensor        | Device_1    | Device_2    | ... | Device_N    |
+|---------------+---------------+-------------+-------------+-----+-------------|
+| YYYY-MM-DD_01 | Sensor_type01 | DATA_SENS01 | SATA_SENS02 |     | DATA_SENS0N |
+| YYYY-MM-DD_01 | Sensor_type02 | DATA_SENS01 | DATA_SENS02 |     | DATA_SENS0N |
+| YYYY-MM-DD_02 | Sensor_type01 | DaTA_SENS01 | DATA_SENS02 |     | DATA_SENS0N |
+|               |               |             |             |     |             |
+ovvero per data/ora e tipologia sensore quali siano le letture per sensore.
+Il numero di righe da mostrare va impostato a parametro e la lista deve essere 
+ordinata per timestamp decrescente.
+*** Drill down device
+Cliccando su un device nuova pagina con le letture 
+| Date time    | Sensor_type01 | Sensor_type02 | ... | Sensor_typeN |
+|--------------+---------------+---------------+-----+--------------|
+| YYYY-MM-DD_1 | DATA_SENS01   | DATA_SENS02   |     | DATA_SENS0N  |
+| YYYY-MM-DD_2 | DATA_SENS01   | DATA_SENS02   |     | DATA_SENS0N  |
+| YYYY-MM-DD_3 | DATA_SENS01   | DATA_SENS02   |     | DATA_SENS0N  |
+| ...          |               |               |     |              |
+|              |               |               |     |              |
+
+** TODO Estrazione letture 
+   Metodo in modulo arrakis che estre le ultime n letture dove n è un parametro passato alla funzione.
